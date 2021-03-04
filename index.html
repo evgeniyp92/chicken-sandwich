@@ -3,36 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/font-awesome.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" />
     <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
   </head>
   <body>
     <header>
-      <div class="titlecard">
-        <div id="name">EVGENIY PIMENOV</div>
-        <div id="title">Developer, United States Air Force</div>
-      </div>
+      <a href="index.html">
+        <div class="titlecard">
+          <div id="name">EVGENIY PIMENOV</div>
+          <div id="title">Developer, United States Air Force</div>
+        </div>
+      </a>
     </header>
     <main>
       <div class="menu">
-        <div class="header"><p class="header-text">ABOUT</p></div>
-        <div class="header"><p class="header-text">PROJECTS</p></div>
-        <div class="header"><p class="header-text">CONTACT</p></div>
+        <div class="header" id="about">
+          <p class="header-text">ABOUT</p>
+        </div>
+        <div class="header" id="projects">
+          <p class="header-text">PROJECTS</p>
+        </div>
+        <div class="header" id="contact">
+          <p class="header-text">CONTACT</p>
+        </div>
+      </div>
+      <div class="content" id="content-container">
+        <div class="paragraph" id="about-content"></div>
+        <div class="paragraph" id="projects-content"></div>
+        <div class="paragraph" id="contact-content">
+          <div class="socials">
+            <a href="mailto:1@evgeniypimenov.com" style="color: white; display: flex">
+            <img src="./assets/img/envelope.svg" id="envelope" alt="envelope" style="color: white; width: 41px;">
+            <p class="username" style="margin-top: .9rem">Email</p>
+            </a>
+          </div>
+        </div>
       </div>
     </main>
+    <div class="spacer"></div>
     <footer class="footer">
       <div id="footer-box">
         <p id="footer-text">Built with 💛 in HTML, CSS and JS</p>
       </div>
     </footer>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
